@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    background: #eee;
+}
+
+header, h1, nav {
+    margin: 0;
+    padding: 0;
+}
+
+header  {
+    background-color: #248;
+    color: #fff;
+    height: 100px;
+    border-bottom: 4px solid #d82;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dark {
+    background-color: #248;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    float: left;
+    padding-top: 25px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    padding-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;    
+}
+
+.highlight, .current {
+    color: #d82;
+    font-weight: bold;
+}
+
+#showcase {
+    background: url(../img/showcase.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #fff;    
+    text-align: center;
+}
+
+#showcase h1 {
+    font-size: 300%;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 130%;
+    padding-bottom: 70px;
+}
+
+#subscription {
+    background-color: #248;
+    color: #fff;
+    padding: 20px;
+}
+
+#subscription h1 {
+    float: left;
+}
+
+#subscription form {
+    float: right;
+}
+
+#subscription input[type=email] {
+    padding: 10px;
+    border: none;
+    font-size: inherit;
+    width: 200px;
+}
+
+.button1 {
+    background-color: #d82;
+    color: white;
+    outline: none;
+    border: none;
+    height: 39px;
+    padding: 0 20px;
+}
+
+#boxes {
+    margin-top: 20px;
+    display: block;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #d82;
+    text-align: center;
+}
+
+#about, #services {
+    padding: 20px 0;
+}
+
+article {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 20%;
+}
+
+aside h1 {
+    margin: 10px 0;
+}
+
+#services ul {
+    margin: 0;
+    padding: 0;
+}
+
+#services ul li {
+    list-style: none;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+aside label {
+    display: block;
+}
+
+aside input, aside textarea {
+    padding: 10px;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    width: 90%;
+}
+
+   
+@media (max-width: 768px) {
+
+    header h1, nav, #subscription h1, #subscription form, 
+    #boxes .box, article, aside {
+        float: none;
+        width: 100%;
+        text-align: center
+    }
+ 
+    header  {
+        height: 120px;
+    }
+ 
+    header h1, nav ul {
+        padding: 5px 0;
+    }
+
+    article#main-col {
+        text-align: justify;
+    }
+ 
+    .container {
+        width: 90%;
+    }
+
+    #showcase h1 {
+        font-size: 170%;
+        padding-top: 50px;
+    }
+    
+    #showcase p {
+        font-size: 120%;
+        padding-bottom: 20px;
+    }
+
+    #about p {
+        text-align: justify;
+    }
+
+    .dark {
+        padding: 10px 0;
+    }
+
+
+    #subscription input[type=email] {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+
+    .button1 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 384px) {
+    body {
+        font: 12px/1.2 Arial, Helvetica, sans-serif;
+    }    
+
+    header  {
+        height: 80px;
+    }
+    
+}
+
+    
